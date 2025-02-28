@@ -93,4 +93,25 @@ tortuga.circle(50)
 tortuga.forward(200)
 
 
+
+# Crear tortuga competidora
+t2 = turtle.Turtle()
+t2.shape("turtle")
+t2.color("Chocolate4")
+t2.penup()
+t2.goto(-200, -40)  # Posición inicial
+t2.pendown()
+
+# Configurar tortuga para moverse con líneas pequeñas
+t2.pensize(2)
+t2.speed(5)
+
+t2.begin_fill()  # Inicia el relleno (aunque no se usa una figura cerrada)
+for _ in range(25):  # Corrección del bucle
+    t2.pendown()
+    t2.forward(25)
+    t2.penup()
+    t2.forward(1)
+t2.end_fill()  # Finaliza el relleno
+
 turtle.done()
