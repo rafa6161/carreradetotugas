@@ -112,6 +112,18 @@ for _ in range(25):  # Corrección del bucle
     t2.forward(25)
     t2.penup()
     t2.forward(1)
+    
+    
+t3= turtle.Turtle()
+t3.shape("turtle")
+
+t3.color("yellowgreen")
+t3.penup()
+t3.pensize(2)
+t3.goto(-150, -80)  # Posición inicial
+t3.pendown()
+t3.speed(2)
+t3.forward(590)  # Avanza  unidades
 t2.end_fill()  # Finaliza el relleno
 
 turtle.done()
